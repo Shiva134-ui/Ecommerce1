@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>User Profile</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="img/logo.png" alt="Logo" />
+            </div>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="#">contact</a>
+                <a href="#">kids</a>
+                <a href="#" class="active">Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="img/user.jpg" alt="Profile Image" class="profile-image">
+                <h2>shiva</h2>
+            </div>
+
+            <div class="profile-options">
+                <div class="option">
+                    <h3>My Account</h3>
+                    <p>View and edit your account details.</p>
+                    <button onclick="location.href='account.html'">Manage Account</button>
+                </div>
+                <div class="option">
+                    <h3>Subscription</h3>
+                    <p>Manage your subscription plan and payment.</p>
+                    <button onclick="location.href='subscription.html'">View Subscription</button>
+                </div>
+                <div class="option">
+                    <h3>Settings</h3>
+                    <p>preferences and privacy settings.</p>
+                    <button onclick="location.href='settings.html'">View Settings</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Streaming Service</p>
+    </footer>
+
+    <script src="script.js" ></script>
+    <script src="firebase.js" type="module"></script>
+
+
+</body>
+
+</html>

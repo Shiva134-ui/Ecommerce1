@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+    <header>
+        <h1>Product Details</h1>
+    </header>
+
+    <main class="product-page">
+        <div class="product-section">
+            <div class="product-image">
+                <img src="img/sample-product.jpg" alt="Product Image">
+            </div>
+            <div class="product-info">
+                <h2 id="product-title">Product Title</h2>
+                <p id="product-description">Detailed description of the product. This includes all necessary information for customers.</p>
+                <div class="product-price">
+                    <span id="price">$99.99</span>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+                <button class="buy-now-btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-specifications">
+            <h3>Product Specifications</h3>
+            <ul>
+                <li>Specification 1: Value</li>
+                <li>Specification 2: Value</li>
+                <li>Specification 3: Value</li>
+                <!-- Add more specifications as needed -->
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        // Example: dynamically setting the product details based on a URL parameter (e.g., product ID).
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        document.getElementById("product-title").textContent = `Product ${productId}`;
+        document.getElementById("product-description").textContent = `Description for Product ${productId}.`;
+    </script>
+    <script src="script.js" ></script>
+    <script src="firebase.js" type="module"></script>
+</body>
+
+</html>

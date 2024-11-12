@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(53, 53, 53);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 80%;
+    height: 90%;
+    /* border: 1px solid #fff; */
+    border-radius: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 10px 25px -8px #000000;
+}
+
+header::-webkit-scrollbar {
+    display: none;
+}
+
+
+header nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid #fff;  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1opx 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    
+}
+
+header nav .menu-btn {
+    font-size: 30px; 
+    color: #fff;
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 17px;
+    padding-top: 3px;
+}
+
+header nav .menu-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav .menu-btn a:hover {
+    color: rgb(255, 255, 255, 0.7);
+}
+
+header nav .logo_ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+header nav .logo_ul ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav .logo_ul ul li {
+    padding: 10px 20px;
+    padding-left: 10px;
+}
+
+header nav .logo_ul ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+header nav .logo_ul ul li a:hover {
+    color: rgb(255, 255, 255, .7);
+}
+
+header nav .search_user {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+header nav .search_user input {
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255, .3);
+    color: #fff;
+    margin-right: 20px;
+    /* margin-left: 670px; */
+}
+
+header nav .search_user input::placeholder {
+    color: #fff;
+}
+
+header nav .search_user img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+header nav .search_user .search {
+    position: absolute;
+    width: 320px;
+    height: 270px;
+    /* border: 1px solid #fff; */
+    right: 0;
+    top: 40px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+
+section {
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    width: 99%;
+    height: auto;
+    padding: 0px 50px;
+    /* background: #f8f8f8; */
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+section .card1::-webkit-scrollbar {
+    display: none;
+}
+ 
+
+
+header section .card1 {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+
+header section .card1 .card {
+    position: relative;
+    min-width: 140px;
+    height: 180px;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: .3s linear;
+    margin-right: 10px;
+    background-color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+    }
+
+    header nav {
+        padding: 10px 20px;
+    }
+
+    header nav .menu-btn {
+        font-size: 25px;
+    }
+
+    header nav .logo_ul ul li {
+        padding: 0 10px;
+    }
+
+    header nav .search_user input {
+        width: 150px; 
+        padding: 5px 10px;
+    }
+
+    section {
+        top: 50%;
+        padding: 10px;
+    }
+
+    .product-section {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .product-info h4 {
+        font-size: 16px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+    }
+
+    .product-info button {
+        padding: 8px 16px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    header {
+        width: 90%;
+    }
+
+    header nav {
+        padding: 10px 20px;
+    }
+
+    header nav .menu-btn {
+        font-size: 25px;
+    }
+
+
+    header nav .logo_ul ul li {
+        padding: 0 10px;
+    }
+
+    header nav .search_user input {
+        width: 150px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+    }
+
+    header nav {
+        padding: 10px;
+        flex-wrap: nowrap; 
+    }
+
+    header nav .menu-btn {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    header nav .logo_ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    header nav .logo_ul ul {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        padding-left: 5px;
+    }
+
+    header nav .logo_ul ul li {
+        padding: 0 5px;
+    }
+
+    header nav .search_user {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .search_user input {
+        width: 80px;
+        padding: 5px;
+    }
+}
